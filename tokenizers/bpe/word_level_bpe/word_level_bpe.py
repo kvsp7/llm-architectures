@@ -235,9 +235,6 @@ with open(
     corpus = file.read()
 
 
-# Example text used to test the tokenizer.
-test = "Hey, How are you..."
-
 
 # Train the Word-Level BPE tokenizer.
 tokenizer = BPETokenizer(
@@ -245,6 +242,9 @@ tokenizer = BPETokenizer(
     merges=30000
 )
 
+'''
+# Example text used to test the tokenizer.
+test = "Hey, How are you..."
 
 # Encode the text into integer token IDs.
 ids = tokenizer.encode(test)
@@ -254,3 +254,4 @@ print(ids)
 # Decode the token IDs back into text.
 text = tokenizer.decode(ids)
 print(text)
+'''
